@@ -1,113 +1,71 @@
-# Medical Insurance Cost Prediction
+# Insurance Cost Prediction using Linear Regression
 
-This project aims to predict medical insurance charges based on factors such as age, BMI, smoking habits, and other demographics. By applying regression models, it provides insights into how these features influence insurance costs, aiding insurers and individuals in understanding premium structures.
+## Case Study
 
----
+### Problem
+Health insurance providers need accurate predictions of individual medical costs to support pricing, underwriting, and risk management decisions.
 
-## Project Overview
+### Context
+This project uses a real-world insurance dataset containing demographic, lifestyle, and regional features to predict annual insurance charges using supervised machine learning.
 
-The objective is to develop a predictive model that estimates insurance charges using customer data. The workflow includes exploratory data analysis (EDA), data preprocessing, feature engineering, and regression modelling to achieve accurate cost predictions.
+### Impact
+- Built a regression model explaining ~75% of the variance in insurance costs
+- Identified key cost drivers such as smoking status, BMI, and age
 
----
-
-## Features
-
-- **Exploratory Data Analysis (EDA)**  
-  Analysed dataset trends and relationships through detailed visualisations.
-
-- **Data Preprocessing**  
-  Handled missing values, encoded categorical variables, and scaled numerical features to prepare data for modelling.
-
-- **Feature Engineering**  
-  Identified key predictors influencing insurance charges to improve model accuracy.
-
-- **Model Building**  
-  Implemented regression models, including Linear Regression, to predict medical insurance costs.
-
-- **Model Evaluation**  
-  Assessed model performance using accuracy metrics and visual error analysis.
+### Why It Matters
+Accurate insurance cost estimation enables better pricing strategies, improved risk assessment, and more data-driven healthcare decisions.
 
 ---
 
-## Technologies Used
+## What I Did
 
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
-- Scikit-learn  
-- Jupyter Notebook
+- Performed end-to-end data analysis and regression modeling
+- Conducted exploratory data analysis (EDA) on numerical and categorical features
+- Preprocessed data and encoded categorical variables
+- Trained and evaluated a Linear Regression model
+- Validated model performance using R² score
+- Implemented insurance cost prediction for new customer inputs
 
 ---
 
-## Project Structure
+## How I Did It (STAR Method)
 
+### Situation
+The dataset contained mixed data types (numerical and categorical) influencing insurance charges.
 
-```
-📁 Medical_Insurance_Prediction
-├── 📄 README.md       # Project documentation
-├── 📄 Medical_insurance_prediction.ipynb  # Jupyter Notebook with code and analysis
-├── 📁 data            # Folder containing the dataset(s)
-├── 📄 requirements.txt # Required Python libraries
-```
+### Task
+Predict continuous insurance costs with an interpretable and reliable baseline model.
 
-## How to Run the Project
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/Medical_Insurance_Prediction.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Medical_Insurance_Prediction
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook Medical_insurance_prediction.ipynb
-   ```
-5. Run the cells in the notebook to execute the analysis and prediction.
+### Action
+- Loaded and validated the dataset (null checks, data types, summary statistics)
+- Visualized feature distributions using Matplotlib and Seaborn
+- Encoded categorical variables (sex, smoker, region)
+- Split data into training and testing sets (80/20)
+- Trained a Linear Regression model using scikit-learn
+- Evaluated model performance on training and test data using R² score
 
-## Dataset
-The dataset contains the following features:
-- **Age:** Age of the individual
-- **Sex:** Gender (male/female)
-- **BMI:** Body Mass Index
-- **Children:** Number of children covered by insurance
-- **Smoker:** Whether the individual smokes (yes/no)
-- **Region:** Residential region (northeast, northwest, southeast, southwest)
-- **Charges:** Medical insurance charges (target variable)
+### Result
+- Training R² score: ~0.75
+- Test R² score: ~0.74
+- Model generalized well with minimal overfitting
+- Enabled prediction of insurance costs for unseen customer profiles
 
-Ensure you have access to the dataset in the `data` folder.
+---
 
-## Results
-- **Best Performing Model:** [Linear_Regression_Model with Accuracy_score]
+## Tech Stack
 
-## Contributing
-Contributions are welcome! If you'd like to contribute:
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature-name"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
+- **Programming Language:** Python
+- **Libraries:** NumPy, Pandas, Scikit-learn
+- **Visualization:** Matplotlib, Seaborn
+- **Model:** Linear Regression
+- **Evaluation Metric:** R² Score
+- **Environment:** Jupyter Notebook
 
-## Acknowledgements
-- [Dataset Source](#): [Kaggle](www.kaggle.com)
-- Inspiration from data science and machine learning communities.
+---
 
-## Contact
-For any questions, feel free to reach out:
-- **Email:** mathanponraj03@gmail.com.com
-- **Linkedin:** [Mathan03](https://Linkedin.com/Mathan03)
+## Key Results / Business Impact
+
+- Achieved strong baseline regression performance
+- Demonstrated impact of lifestyle factors on insurance pricing
+- Delivered an interpretable model suitable for business and policy analysis
+- Established a foundation for advanced modeling (regularization, tree-based models)
