@@ -1,71 +1,62 @@
 # Insurance Cost Prediction using Linear Regression
 
-## Case Study
+## Project Overview
+This project is a **learning-focused regression analysis task** where I used **Linear Regression** to predict medical insurance costs based on demographic and lifestyle features.
 
-### Problem
-Health insurance providers need accurate predictions of individual medical costs to support pricing, underwriting, and risk management decisions.
-
-### Context
-This project uses a real-world insurance dataset containing demographic, lifestyle, and regional features to predict annual insurance charges using supervised machine learning.
-
-### Impact
-- Built a regression model explaining ~75% of the variance in insurance costs
-- Identified key cost drivers such as smoking status, BMI, and age
-
-### Why It Matters
-Accurate insurance cost estimation enables better pricing strategies, improved risk assessment, and more data-driven healthcare decisions.
+The objective was to understand how different variables influence insurance charges and to practice the **end-to-end workflow of a regression problem**.
 
 ---
 
-## What I Did
-
-- Performed end-to-end data analysis and regression modeling
-- Conducted exploratory data analysis (EDA) on numerical and categorical features
-- Preprocessed data and encoded categorical variables
-- Trained and evaluated a Linear Regression model
-- Validated model performance using R² score
-- Implemented insurance cost prediction for new customer inputs
+## Problem Statement
+Given customer information such as age, BMI, smoking status, and region, the task is to predict annual medical insurance charges using a supervised learning approach.
 
 ---
 
-## How I Did It (STAR Method)
+## What I Worked On
 
-### Situation
-The dataset contained mixed data types (numerical and categorical) influencing insurance charges.
-
-### Task
-Predict continuous insurance costs with an interpretable and reliable baseline model.
-
-### Action
-- Loaded and validated the dataset (null checks, data types, summary statistics)
-- Visualized feature distributions using Matplotlib and Seaborn
-- Encoded categorical variables (sex, smoker, region)
-- Split data into training and testing sets (80/20)
-- Trained a Linear Regression model using scikit-learn
-- Evaluated model performance on training and test data using R² score
-
-### Result
-- Training R² score: ~0.75
-- Test R² score: ~0.74
-- Model generalized well with minimal overfitting
-- Enabled prediction of insurance costs for unseen customer profiles
+- Loaded and explored a real-world insurance dataset
+- Performed exploratory data analysis (EDA) on numerical and categorical features
+- Handled categorical variables using encoding techniques
+- Split the dataset into training and testing sets
+- Trained a **Linear Regression** model
+- Evaluated model performance using R² score
 
 ---
 
-## Tech Stack
-
-- **Programming Language:** Python
-- **Libraries:** NumPy, Pandas, Scikit-learn
-- **Visualization:** Matplotlib, Seaborn
-- **Model:** Linear Regression
-- **Evaluation Metric:** R² Score
-- **Environment:** Jupyter Notebook
+## Dataset Information
+- Data Type: Tabular (numerical and categorical features)
+- Target Variable: Insurance charges (continuous)
+- Features: Age, BMI, smoking status, region, and other customer attributes
 
 ---
 
-## Key Results / Business Impact
+## Model Performance
+- **Training R² Score:** ~0.75  
+- **Test R² Score:** ~0.74  
 
-- Achieved strong baseline regression performance
-- Demonstrated impact of lifestyle factors on insurance pricing
-- Delivered an interpretable model suitable for business and policy analysis
-- Established a foundation for advanced modeling (regularization, tree-based models)
+The results showed that the model explained a significant portion of the variance and generalized well to unseen data.
+
+---
+
+## Tools & Technologies Used
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib, Seaborn  
+- Jupyter Notebook  
+
+---
+
+## Key Learnings
+- Understanding relationships between features and a continuous target variable
+- Applying Linear Regression to real-world data
+- Handling categorical variables in regression models
+- Interpreting R² score for model evaluation
+- Importance of EDA before model training
+
+---
+
+## Future Improvements
+- Try regularized regression techniques (Ridge, Lasso)
+- Experiment with tree-based regression models
+- Evaluate performance using additional metrics such as MAE and RMSE
