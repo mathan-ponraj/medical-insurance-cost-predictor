@@ -1,62 +1,39 @@
-# Insurance Cost Prediction using Linear Regression
+# Medical Insurance Premium Prediction
 
 ## Project Overview
-This project is a **learning-focused regression analysis task** where I used **Linear Regression** to predict medical insurance costs based on demographic and lifestyle features.
+This project is a regression analysis task where I built a model to predict annual medical insurance premiums. By analyzing customer data like age, health metrics, and lifestyle choices, the system estimates the expected insurance cost for an individual.
 
-The objective was to understand how different variables influence insurance charges and to practice the **end-to-end workflow of a regression problem**.
+## The Problem
+Insurance companies need to set fair and accurate prices for their customers. The goal of this project is to understand how different factors—such as smoking habits or BMI—impact the final cost, allowing for data-driven pricing instead of manual estimation.
 
----
+## My Technical Workflow
 
-## Problem Statement
-Given customer information such as age, BMI, smoking status, and region, the task is to predict annual medical insurance charges using a supervised learning approach.
+1. Data Exploration: I performed Exploratory Data Analysis (EDA) to find correlations between user habits (like smoking) and their total medical charges.
+2. Data Preprocessing: I handled categorical data (like region and gender) using encoding techniques so the mathematical model could process them correctly.
+3. Model Training: I split the data into 80% training and 20% testing sets. I applied Linear Regression to find the best-fit relationship between the customer features and the cost.
+4. Evaluation: I used the R² score to measure how well the model's predictions matched the actual historical costs in the dataset.
 
----
+## Results and Performance
+The model provided a solid baseline for cost estimation:
+- Training R² Score: Approximately 0.75
+- Test R² Score: Approximately 0.74
 
-## What I Worked On
+Since the training and test scores are nearly identical, it shows the model is stable and generalizes well to new customers without being biased toward the training data.
 
-- Loaded and explored a real-world insurance dataset
-- Performed exploratory data analysis (EDA) on numerical and categorical features
-- Handled categorical variables using encoding techniques
-- Split the dataset into training and testing sets
-- Trained a **Linear Regression** model
-- Evaluated model performance using R² score
+## Tools Used
+- Programming: Python
+- Data Analysis: Pandas and NumPy
+- Visualization: Matplotlib and Seaborn
+- Machine Learning: Scikit-learn
+- Environment: Jupyter Notebook
 
----
-
-## Dataset Information
-- Data Type: Tabular (numerical and categorical features)
-- Target Variable: Insurance charges (continuous)
-- Features: Age, BMI, smoking status, region, and other customer attributes
-
----
-
-## Model Performance
-- **Training R² Score:** ~0.75  
-- **Test R² Score:** ~0.74  
-
-The results showed that the model explained a significant portion of the variance and generalized well to unseen data.
+## Future Goals
+To make the predictions even more accurate, I plan to:
+- Use Gradient Boosting models like XGBoost to capture non-linear relationships.
+- Apply Regularization (Ridge/Lasso) to prevent any single feature from dominating the model.
+- Include error metrics like Mean Absolute Error (MAE) to understand the average rupee-value difference in predictions.
 
 ---
-
-## Tools & Technologies Used
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- Matplotlib, Seaborn  
-- Jupyter Notebook  
-
----
-
-## Key Learnings
-- Understanding relationships between features and a continuous target variable
-- Applying Linear Regression to real-world data
-- Handling categorical variables in regression models
-- Interpreting R² score for model evaluation
-- Importance of EDA before model training
-
----
-
-## Future Improvements
-- Try regularized regression techniques (Ridge, Lasso)
-- Experiment with tree-based regression models
-- Evaluate performance using additional metrics such as MAE and RMSE
+Developed by Mathan Ponraj
+CSE Graduate | Data Science and Analytics
+[LinkedIn Profile](https://www.linkedin.com)
